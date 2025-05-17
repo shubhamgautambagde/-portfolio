@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.505f5cf8.css",
+    "main.js": "./static/js/main.483e941c.js",
+    "static/js/453.1407b060.chunk.js": "./static/js/453.1407b060.chunk.js",
+    "static/media/ivan-stern-LOLSb7m6XkU-unsplash.jpg": "./static/media/ivan-stern-LOLSb7m6XkU-unsplash.6f4c7bc279b5dbc12997.jpg",
+    "static/media/image2.png": "./static/media/image2.9b72f4de34f5d6853324.png",
+    "static/media/bankingsytem.png": "./static/media/bankingsytem.d1700e5a6140b58ac9fc.png",
+    "static/media/events.png": "./static/media/events.628da3271b37f16a6a0c.png",
+    "static/media/chatbot.jpg": "./static/media/chatbot.5841e41d92c138799672.jpg",
+    "static/media/airlineManagementsystem.jpg": "./static/media/airlineManagementsystem.b4f7e48c432001c22b24.jpg",
+    "static/media/flowershop.jpg": "./static/media/flowershop.710c89deb205b6e258b0.jpg",
+    "static/media/hospital.jpg": "./static/media/hospital.088047c5e630c8408ecd.jpg",
+    "index.html": "./index.html",
+    "main.505f5cf8.css.map": "./static/css/main.505f5cf8.css.map",
+    "main.483e941c.js.map": "./static/js/main.483e941c.js.map",
+    "453.1407b060.chunk.js.map": "./static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.505f5cf8.css",
+    "static/js/main.483e941c.js"
+  ]
+}
