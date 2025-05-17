@@ -1,0 +1,81 @@
+/* Work Section Styles */
+.work-section {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .work-heading {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  .work-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-sizing: border-box;
+  }
+  
+  .work-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: "Poppins", sans-serif;
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(6px);
+  }
+  
+  .work-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .work-role {
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  .work-company {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+  }
+  
+  .work-duration {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+  }
+  
+  .work-details {
+    list-style-type: disc;
+    padding-left: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

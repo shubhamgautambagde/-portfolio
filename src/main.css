@@ -1,0 +1,212 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #151925;
+  transition: top 0.3s;
+}
+
+.left {
+  width: 35%;
+  display: flex;
+  justify-content: left;
+}
+
+.right {
+  width: 55%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  border-color: transparent;
+  width: 120px;
+  height: 30px;
+  font-size: 18px;
+  color: #03B0FD;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.button:focus,
+.button:hover {
+  color: #fff;
+}
+
+.button:focus:after,
+.button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+body {
+  background-color: #151925;
+}
+
+.title {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/* Keyframes typing (unchanged) */
+@keyframes typing {
+  /* Web Developer */
+  0%, 27.34% { content: ""; }
+  1.67%, 48.20% { content: "w"; }
+  3.33%, 46.06% { content: "we"; }
+  5.00%, 44.93% { content: "web"; }
+  6.66%, 42.79% { content: "web "; }
+  8.33%, 40.65% { content: "web d"; }
+  11.66%, 38.51% { content: "web de"; }
+  13.33%, 36.37% { content: "web dev"; }
+  15.00%, 34.23% { content: "web deve"; }
+  16.66%, 32.09% { content: "web devel"; }
+  19.39%, 31.95% { content: "web develo"; }
+  21.53%, 29.81% { content: "web develop"; }
+  23.67%, 28.67% { content: "web develope"; }
+  25.81%, 26.53% { content: "web developer"; }
+
+  /* Software Engineer */
+  27.35%, 32.00% { content: ""; }
+  33.00%, 34.00% { content: "s"; }
+  35.00%, 36.00% { content: "so"; }
+  37.00%, 38.00% { content: "sof"; }
+  39.00%, 40.00% { content: "soft"; }
+  41.00%, 42.00% { content: "softw"; }
+  43.00%, 44.00% { content: "softwa"; }
+  45.00%, 46.00% { content: "softwar"; }
+  47.00%, 48.00% { content: "software"; }
+  49.00%, 50.00% { content: "software "; }
+  51.00%, 52.00% { content: "software e"; }
+  53.00%, 54.00% { content: "software en"; }
+  55.00%, 56.00% { content: "software eng"; }
+  57.00%, 58.00% { content: "software engi"; }
+  59.00%, 60.00% { content: "software engin"; }
+  61.00%, 62.00% { content: "software engine"; }
+  63.00%, 64.00% { content: "software enginee"; }
+  65.00%, 66.00% { content: "software engineer"; }
+
+  /* Technical Consultant */
+  66.01%, 70.00% { content: ""; }
+  71.00%, 72.00% { content: "t"; }
+  73.00%, 74.00% { content: "te"; }
+  75.00%, 76.00% { content: "tec"; }
+  77.00%, 78.00% { content: "tech"; }
+  79.00%, 80.00% { content: "techn"; }
+  81.00%, 82.00% { content: "techni"; }
+  83.00%, 84.00% { content: "technic"; }
+  85.00%, 86.00% { content: "technica"; }
+  87.00%, 88.00% { content: "technical"; }
+  89.00%, 90.00% { content: "technical "; }
+  91.00%, 92.00% { content: "technical c"; }
+  93.00%, 94.00% { content: "technical co"; }
+  95.00%, 96.00% { content: "technical con"; }
+  97.00%, 98.00% { content: "technical cons"; }
+  99.00%, 100% { content: "technical consultant"; }
+}
+
+.typewriter {
+  --caret: #03B0FD;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+/* Blink keyframe */
+@keyframes blink {
+  0%, 50% { border-color: var(--caret); }
+  51%, 100% { border-color: transparent; }
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25px;
+  height: 22px;
+  cursor: pointer;
+  margin-left: 15px;
+  z-index: 1100;
+}
+
+.hamburger .bar {
+  width: 100%;
+  height: 3px;
+  background-color: #03B0FD;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .navbar {
+    height: 80px;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .left {
+    width: 40%;
+  }
+  .right {
+    width: 100%;
+    display: none; /* hide menu by default */
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    background-color: #151925;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .right.open {
+    display: flex; /* show menu when open */
+  }
+  .button {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    margin: 8px 0;
+    text-align: center;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
