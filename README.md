@@ -12,4 +12,5 @@ Welcome to my portfolio website of Anushri Tiwari, built with the MERN stack (Mo
 <h4>preview for my website</h4>
 
 
-[Screenshot 2024-08-23 134120]
+![image](https://github.com/user-attachments/assets/80dd01cf-1ef3-4707-9dd8-96d9cbf4f1df)
+
